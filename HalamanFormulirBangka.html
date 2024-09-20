@@ -45,7 +45,24 @@
         input[type="submit"]:hover {
             background-color: #218838;
         }
-    </style
+    </style>
+
+    <script>
+        function setTanggalOtomatis() {
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+
+            today = dd + '/' + mm + '/' + yyyy;
+            document.getElementById('tanggal').value = today;
+        }
+
+        window.onload = function() {
+            setTanggalOtomatis();
+        }
+    </script>
+    
 </head>
 <body>
 
@@ -63,7 +80,7 @@
     <input type="text" id="telepon" name="telepon" value = "081254367898" required>
 
     <label for="tanggal">Tanggal Perjalanan:</label>
-    <input type="text" id="tanggal" name="tanggal" value = "24/09/2024" required>
+    <input type="text" id="tanggal" name="tanggal" required>
 
     <input type="submit" value="Pesan Sekarang">
 </form>
