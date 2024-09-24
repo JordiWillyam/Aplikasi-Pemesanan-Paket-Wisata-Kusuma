@@ -38,13 +38,25 @@
             margin: 10px;
             width: 300px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            
         }
 
         .paket h2 {
             font-size: 1.5em;
             margin-bottom: 10px;
         }
+        .paket-ntt p {
+            color: antiquewhite;
+        }
+        .paket-ntt h2 {
+            color: azure;
+        }
 
+        .paket-bangka h2 {
+            color: azure;
+            
+        }
+        
         footer {
             text-align: center;
             padding: 10px 0;
@@ -54,6 +66,66 @@
             bottom: 0;
             width: 100%;
         }
+        
+        .paket-bangka {
+            background-image: url('img/bangka1.jpg');
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 10px;
+            width: 400px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .paket-bandung {
+            background-image: url('img/bandung.jpg'); 
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 10px;
+            width: 400px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        }
+
+        .paket-ntt {
+            background-image: url('img/ntt.jpg');
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 10px;
+            width: 400px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        }
+        button {
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 15px 30px; 
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block; 
+            font-size: 16px; 
+            border-radius: 8px; 
+            border: none; 
+            cursor: pointer; 
+            transition: background-color 0.3s, transform 0.3s; 
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05); 
+        }
+
+        button a {
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+
+        button a:hover {
+            color: #f1f1f1; 
+        }
+
+
     </style>
 </head>
 
@@ -61,22 +133,27 @@
     <header>
         <h1>Daftar Paket Wisata</h1>
     </header>
+    
     <main>
+        
         <div class="paket-container">
-            <div class="paket">
-                <h2>Paket Wisata Bangka</h2>
+        
+            <div class="paket-bangka">
+                <h2><b>Paket Wisata Bangka</b></h2>
                 <p>Deskripsi: Nikmati keindahan pulau Bangka dengan pantai-pantainya yang menawan.</p>
                 <p>Harga: Rp 3.000.000</p>
                 <p>Durasi: 3 Hari 2 Malam</p>
+                <button><a href="HalamanFormulirBangka.html">Pesan Sekarang</a></button>
+
             </div>
-            <div class="paket">
-                <h2>Paket Wisata Bandung</h2>
+            <div class="paket-bandung">
+                <h2><a href="HalamanFormulirBandung.html"> Paket Wisata Bandung</a></h2>
                 <p>Deskripsi: Eksplorasi budaya dan sejarah di Bandung, kota budaya Indonesia.</p>
                 <p>Harga: Rp 2.500.000</p>
                 <p>Durasi: 2 Hari 1 Malam</p>
             </div>
-            <div class="paket">
-                <h2>Paket Wisata Nusa Tenggara Timur</h2>
+            <div class="paket-ntt">
+                <h2><a href="HalamanFormulirNTT.html"><b>Paket Wisata Nusa Tenggara Timur</b></a></h2>
                 <p>Deskripsi: Temukan keindahan alam dan satwa langka di Pulau Komodo.</p>
                 <p>Harga: Rp 4.500.000</p>
                 <p>Durasi: 4 Hari 3 Malam</p>
