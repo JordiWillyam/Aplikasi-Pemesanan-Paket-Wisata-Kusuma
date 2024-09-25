@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #e9f5ee;
             margin: 0;
             padding: 20px;
         }
@@ -16,15 +16,24 @@
             margin: auto;
             background: white;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-top: 50px;
         }
         h1 {
             text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        form {
+            width: 100%;
         }
         label {
             display: block;
             margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
         }
         input[type="text"], input[type="email"], select {
             width: 100%;
@@ -32,18 +41,41 @@
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
         }
         input[type="submit"] {
             background-color: #28a745;
             color: white;
             border: none;
-            padding: 10px;
+            padding: 12px 20px;
             cursor: pointer;
             border-radius: 5px;
-            width: 100%;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
         }
         input[type="submit"]:hover {
             background-color: #218838;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus {
+            border-color: #28a745;
+            outline: none;
+            box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+        }
+
+        input[type="text"]:hover, input[type="email"]:hover {
+            border-color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            input[type="submit"] {
+                font-size: 16px;
+                padding: 10px;
+            }
         }
     </style>
     
